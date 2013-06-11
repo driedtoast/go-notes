@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Convenient little approach to setting up the env path
+BASE_DIR=$( dirname "${BASH_SOURCE[0]}" )
+cd $BASE_DIR && BASE_DIR=`pwd`
+export GOPATH=$BASE_DIR
+export PATH=$PATH:$GOPATH/bin
