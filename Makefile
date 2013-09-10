@@ -25,9 +25,9 @@ check: build format
 	-@$(ECHO) ""
 
 clean:
-	@rm -f bin/*
-	@rm -Rf pkg/*
-	@$(foreach dep,$(DEPENDENCIES), rm -Rf src/$(dep);)
+	# @rm -f bin/*
+	# @rm -Rf pkg/*
+	# @$(foreach dep,$(DEPENDENCIES), rm -Rf src/$(dep);)
 
 install: build install-packages install-man
 	-@$(ECHO) "\n\033[1;32mCONGRATULATIONS!\033[0;32m\n$(PROJECT_NAME) has been built, tested and installed!\033[0m\n"

@@ -14,3 +14,21 @@ Goal is to just have a simple app that just adds a blob to a postgres db, eventu
 
 * github.com/lib/pq
 * github.com/nu7hatch/gouuid
+
+
+**TODO**
+* create a db connection / setup migration, see go-pg example below
+```
+package main
+
+import (
+    _ "github.com/lib/pq"
+    "database/sql"
+)
+
+func main() {
+    db, err := sql.Open("postgres", "user=pqgotest dbname=pqgotest sslmode=verify-full")
+    // ...
+}
+
+```
