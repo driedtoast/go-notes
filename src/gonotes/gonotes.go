@@ -9,10 +9,17 @@ import (
 
 // Flag expected from the commmand line
 var createFlag = flag.Bool("c", false, `Create file \n`)
+
+// TODO integrate with this
 var createMigration = flag.Bool("m", false, `Create migration / schema file \n`)
 var lineNumbers = flag.Int("l", 100, `Number of lines to save to notes \n`)
 
-// TODO create a flag for type of note / line storage
+// TODO::
+// create a flag for type of note / line storage
+// Store the blob / text into the db
+// Process lines based on certain criteria?
+// call commands based on flags
+// clean up command line parsing
 
 func main() {
 	flag.Parse()
@@ -53,7 +60,3 @@ loop:
 	}
 	fmt.Println("saved note. <id here>")
 }
-
-// TODO::
-// Store the blob / text into the db
-// Process lines based on certain criteria?

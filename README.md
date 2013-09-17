@@ -18,7 +18,14 @@ Goal is to just have a simple app that just adds a blob to a postgres db, eventu
 
 **TODO**
 * create a db connection / setup migration, see go-pg example below
-```
+* process lines on cli to store notes
+* list the notes in the db
+* remove the note from the db
+* move to sqllite
+* tag a note and details 
+
+
+```go
 package main
 
 import (

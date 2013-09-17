@@ -8,7 +8,7 @@ import (
 )
 
 func DbConnection() (*sql.DB, error) {
-	cfg := config()
+	cfg := helpers.Config()
 
 	var buffer bytes.Buffer
 	buffer.WriteString(" user=")

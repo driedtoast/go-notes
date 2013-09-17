@@ -7,4 +7,5 @@ github.com/robyoung/go.stringmetrics
 github.com/russross/blackfriday
 github.com/fd/options
 github.com/jbrukh/bayesian
+github.com/kylelemons/go-gypsy/yaml
 

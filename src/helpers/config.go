@@ -6,7 +6,7 @@ import (
 
 var configFile *yaml.File
 
-func config() *yaml.File {
+func Config() *yaml.File {
 	if configFile != nil {
 		return configFile
 	}
