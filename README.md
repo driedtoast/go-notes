@@ -21,7 +21,7 @@ Goal is to just have a simple app that just adds a blob to a postgres db, eventu
 * process lines on cli to store notes
 * list the notes in the db
 * remove the note from the db
-* move to sqllite
+* move to sqllite or sophia - http://sphia.org/get.html
 * tag a note and details 
 
 
